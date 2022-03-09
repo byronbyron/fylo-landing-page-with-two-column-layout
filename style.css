@@ -12,9 +12,16 @@
     --light-gray: hsl(0, 0%, 75%);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 h1, h2 {
@@ -64,7 +71,34 @@ p {
     text-decoration: none;
 }
 
+.links span {
+    position: relative;
+}
+
+.links span::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: black;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s, color 0.3s;
+    transform: translateY(0.5rem);
+}
+
+.links a:hover span::after,
+.links a:focus span::after {
+    color: black;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .container {
+    max-width: 1328px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -82,4 +116,18 @@ p {
     .nav {
         min-height: 180px;
     }
+
+    .logo {
+        width: 166px;
+    }
+
+    .links li {
+        margin-left: 2.125rem;
+    }
+
+    .links a {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
 }
