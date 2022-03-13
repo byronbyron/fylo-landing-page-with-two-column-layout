@@ -490,8 +490,8 @@ p {
 
     .hero .image {
         margin-top: -4.75rem;
-        margin-left: -0.5rem;
-        width: 103%;
+        margin-left: -2.25rem;
+        width: 108%;
     }
 
     .hero-body {
@@ -649,6 +649,7 @@ p {
 
     .footer {
         padding-top: 6.5rem;
+        padding-bottom: 1.5rem;
     }
 
     .footer-logo {
