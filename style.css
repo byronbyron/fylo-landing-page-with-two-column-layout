@@ -297,6 +297,32 @@ p {
 
 .section-dark {
     background-color: var(--desaturated-blue);
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+}
+
+.section-dark .row {
+    flex-direction: row;
+}
+
+.section-dark .section-body {
+    text-align: center;
+}
+
+.section-dark h3 {
+    color: var(--white);
+    margin-bottom: 0.875rem;
+}
+
+.section-dark p {
+    color: var(--white);
+    margin: 0 auto 1.5rem;
+}
+
+.form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .attribution {
@@ -502,5 +528,40 @@ p {
         margin-top: 2rem;
         margin-bottom: 0;
         padding: 0;
+    }
+
+    .section-dark {
+        padding-top: 7rem;
+        padding-bottom: 4.125rem;
+    }
+
+    .section-dark .section-body {
+        text-align: left;
+    }
+
+    .section-dark h3 {
+        font-size: 2rem;
+        margin-top: -0.875rem;
+    }
+
+    .section-dark p {
+        font-size: 1rem;
+        max-width: 54ch;
+        margin-left: 0;
+    }
+
+    .form {
+        max-width: 480px;
+        margin-right: 2.5rem;
+    }
+
+    .form .form-control {
+        padding: 0.875rem 1.25rem;
+    }
+
+    .form .btn {
+        max-width: 200px;
+        padding: 1rem;
+        box-shadow: 0 5px 5px hsl(0deg 0% 10% / 20%);
     }
 }
