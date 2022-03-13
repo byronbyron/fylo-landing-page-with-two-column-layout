@@ -149,6 +149,20 @@ p {
     transition: border-color .15s;
 }
 
+.form-control[aria-invalid="true"] {
+    border-color: indianred;
+}
+
+.form-msg {
+    font-size: 13px;
+    color: indianred;
+    margin-top: 2px;
+}
+
+.form .form-msg {
+    color: var(--light-grayish-blue);
+}
+
 .btn {
     font-size: 0.875rem;
     font-weight: 700;
@@ -527,6 +541,7 @@ p {
 
     .hero-form .btn {
         width: 200px;
+        min-height: 45px;
     }
 
     .form-control {
